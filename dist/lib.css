@@ -1,0 +1,177 @@
+/* reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:root {
+  --primary-color: #f6755e;
+  --secondary-color: #25a2c3;
+  --info-color: #8c9eff;
+  --success-color: #4CAF50;
+  --error-color: #b71c1c;
+  --warning-color: #FFC107; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.border {
+  border: 1px solid #000; }
+
+.block {
+  display: block; }
+
+.row {
+  display: flex; }
+  .row.content-center {
+    justify-content: center; }
+  .row.content-v-center {
+    align-items: center; }
+
+.col,
+.column {
+  display: flex;
+  flex-direction: row; }
+  .col.content-v-center,
+  .column.content-v-center {
+    justify-content: center; }
+  .col.content-center,
+  .column.content-center {
+    align-items: center; }
+
+.btn {
+  border: 1px solid;
+  padding: 5px;
+  display: inline-block;
+  background-color: #efefef;
+  text-align: center; }
+  .btn:before {
+    content: "";
+    display: inherit;
+    vertical-align: middle;
+    height: 100%; }
+  .btn.rounded {
+    border-radius: 20px; }
+  .btn.primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color); }

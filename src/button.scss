@@ -1,0 +1,23 @@
+.btn {
+    border: 1px solid;
+    padding: 5px;
+    display: inline-block;
+    background-color: #efefef;
+    text-align: center;
+
+    &:before {
+        content: "";
+        display: inherit;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    &.rounded {
+        border-radius: 20px;
+    }
+
+    &.primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
