@@ -1,6 +1,10 @@
 .row {
     display: flex;
 
+    &:not(.no-wrap) {
+        flex-wrap: wrap;
+    }
+
     &.content-center {
         justify-content: center;
     }
@@ -13,7 +17,7 @@
 .col,
 .column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     &.content-v-center {
         justify-content: center;

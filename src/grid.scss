@@ -1,0 +1,76 @@
+.row>* {
+    box-sizing: border-box;
+}
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg : 992px;
+$breakpoint-xl : 1200px;
+
+@mixin viewport-sm {
+    @media (min-width: #{$breakpoint-sm}) {
+        @content;
+    }
+}
+
+@mixin viewport-md {
+    @media (min-width: #{$breakpoint-md}) {
+        @content;
+    }
+}
+
+@mixin viewport-lg {
+    @media (min-width: #{$breakpoint-lg}) {
+        @content;
+    }
+}
+
+@mixin viewport-xl {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}
+
+@mixin viewport-breakup($device) {
+
+    $size-of-one-column: 100/12;
+    $unit: '%';
+
+    @for $i from 1 through 12 {
+        @if $device==xs {
+            .col-#{$i} {
+                // width: #{$size-of-one-column*$i}#{$unit};
+                // flex: 0 0 auto;
+                flex-basis: #{$size-of-one-column*$i}#{$unit};
+            }
+        }
+
+        @else {
+            .col-#{$device}-#{$i} {
+                // width: #{$size-of-one-column*$i}#{$unit};
+                // flex: 0 0 auto;
+                flex-basis: #{$size-of-one-column*$i}#{$unit};
+            }
+        }
+    }
+}
+
+//default xs
+
+@include viewport-breakup(xs);
+
+@include viewport-sm {
+    @include viewport-breakup(sm);
+}
+
+@include viewport-md {
+    @include viewport-breakup(md);
+}
+
+@include viewport-lg {
+    @include viewport-breakup(lg);
+}
+
+@include viewport-xl {
+    @include viewport-breakup(xl);
+}
