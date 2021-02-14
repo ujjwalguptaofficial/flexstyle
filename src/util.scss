@@ -14,3 +14,69 @@
 .width-full {
     width: 100%;
 }
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-info {
+    color: var(--info-color);
+}
+
+.text-error {
+    color: var(--error-color);
+}
+
+.text-warning {
+    color: var(--warning-color);
+}
+
+.text-success {
+    color: var(--success-color);
+}
+
+.quote {
+
+    &:after,
+    &:before {
+        content: "\201C";
+        font-family: Sanchez;
+    }
+}
+
+.highlight {
+    position: relative;
+    padding-left: 1em;
+    border-left: .2em solid;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-weight: 100;
+
+    &.primary {
+        border-left-color: var(--primary-color);
+    }
+
+    &.secondary {
+        border-left-color: var(--secondary-color);
+    }
+
+    &.info {
+        border-left-color: var(--info-color);
+    }
+
+    &.error {
+        border-left-color: var(--error-color);
+    }
+
+    &.warning {
+        border-left-color: var(--warning-color);
+    }
+
+    &.success {
+        border-left-color: var(--success-color);
+    }
+}

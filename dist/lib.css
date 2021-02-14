@@ -152,6 +152,30 @@ table {
 .width-full {
   width: 100%; }
 
+.quote:after, .quote:before {
+  content: "\201C";
+  font-family: Sanchez; }
+
+.highlight {
+  position: relative;
+  padding-left: 1em;
+  border-left: .2em solid;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 100; }
+  .highlight.primary {
+    border-left-color: var(--primary-color); }
+  .highlight.secondary {
+    border-left-color: var(--secondary-color); }
+  .highlight.info {
+    border-left-color: var(--info-color); }
+  .highlight.error {
+    border-left-color: var(--error-color); }
+  .highlight.warning {
+    border-left-color: var(--warning-color); }
+  .highlight.success {
+    border-left-color: var(--success-color); }
+
 .row {
   display: flex; }
   .row.content-center {
@@ -265,15 +289,17 @@ h6 {
 input {
   font-size: 1rem; }
 
+.dropdown,
 .textbox {
-  border: 1px solid;
-  padding: 5px 5px;
+  padding: 0;
   border-radius: 2px;
   border: 1px solid var(--input-border-color);
-  display: flex;
-  padding: 0;
   width: 300px;
   height: 30px;
+  background: inherit; }
+
+.textbox {
+  display: flex;
   align-items: center; }
   .textbox input {
     border: 0;
@@ -283,7 +309,11 @@ input {
       outline: none; }
   .textbox:focus-within {
     box-shadow: 0 0 0 2px #e7f3ff;
-    border: 2px solid var(--primary-color); }
+    border: 2px solid var(--input-border-color); }
+  .textbox.primary {
+    border-color: var(--primary-color); }
+    .textbox.primary:focus-within {
+      border-color: var(--primary-color); }
   .textbox.error {
     border-color: var(--error-color); }
     .textbox.error:focus-within {
@@ -300,11 +330,28 @@ input {
   border: 1px solid var(--input-border-color); }
   .checkbox.primary {
     border-color: var(--primary-color); }
+  .checkbox.secondary {
+    border-color: var(--secondary-color); }
   .checkbox[checked]::after {
-    content: "\2713"; }
+    content: "\2714"; }
   .checkbox[checked].primary {
     background-color: var(--primary-color);
     color: var(--primary-contrast-color); }
   .checkbox[checked].secondary {
     background-color: var(--secondary-color);
     color: var(--secondary-contrast-color); }
+
+.dropdown:focus {
+  outline: none;
+  border: 2px solid var(--input-border-color);
+  box-shadow: 0 0 0 2px #e7f3ff; }
+
+.dropdown.primary {
+  border-color: var(--primary-color); }
+  .dropdown.primary:focus {
+    border-color: var(--primary-color); }
+
+.dropdown.error {
+  border-color: var(--error-color); }
+  .dropdown.error:focus-within {
+    border-color: var(--error-color); }

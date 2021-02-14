@@ -4,15 +4,19 @@
      font-size: 1rem;
  }
 
+ .dropdown,
  .textbox {
-     border: 1px solid;
-     padding: 5px 5px;
+     padding: 0;
      border-radius: 2px;
      border: 1px solid $border-color;
-     display: flex;
-     padding: 0;
      width: 300px;
      height: 30px;
+     background: inherit;
+ }
+
+ .textbox {
+
+     display: flex;
      align-items: center;
 
      input {
@@ -27,7 +31,15 @@
 
      &:focus-within {
          box-shadow: 0 0 0 2px #e7f3ff;
-         border: 2px solid var(--primary-color);
+         border: 2px solid $border-color;
+     }
+
+     &.primary {
+         border-color: var(--primary-color);
+
+         &:focus-within {
+             border-color: var(--primary-color);
+         }
      }
 
      &.error {
@@ -37,8 +49,6 @@
              border-color: var(--error-color);
          }
      }
-
-
  }
 
  .checkbox {
@@ -74,6 +84,32 @@
          &.secondary {
              background-color: var(--secondary-color);
              color: var(--secondary-contrast-color);
+         }
+     }
+ }
+
+ .dropdown {
+
+     &:focus {
+         outline: none;
+         border: 2px solid $border-color;
+         box-shadow: 0 0 0 2px #e7f3ff;
+     }
+
+
+     &.primary {
+         border-color: var(--primary-color);
+
+         &:focus {
+             border-color: var(--primary-color);
+         }
+     }
+
+     &.error {
+         border-color: var(--error-color);
+
+         &:focus-within {
+             border-color: var(--error-color);
          }
      }
  }
