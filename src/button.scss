@@ -1,9 +1,16 @@
 .btn {
-    border: 1px solid;
     padding: 5px;
     display: inline-block;
-    background-color: #efefef;
     text-align: center;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:not(.link) {
+        background-color: #efefef;
+        border: 1px solid;
+        padding: .5em 1em;
+    }
 
     &:before {
         content: "";
@@ -12,12 +19,77 @@
         height: 100%;
     }
 
-    &.rounded {
-        border-radius: 20px;
-    }
+    // colors
 
     &.primary {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
+        color: var(--primary-contrast-color);
     }
+
+    &.secondary {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+        color: var(--secondary-contrast-color);
+    }
+
+    &.info {
+        background-color: var(--info-color);
+        border-color: var(--info-color);
+        color: var(--info-contrast-color);
+    }
+
+    &.success {
+        background-color: var(--success-color);
+        border-color: var(--success-color);
+        color: var(--sucess-contrast-color);
+    }
+
+    &.error {
+        background-color: var(--error-color);
+        border-color: var(--error-color);
+        color: var(--error-contrast-color);
+    }
+
+    &.warning {
+        background-color: var(--warning-color);
+        border-color: var(--warnings-color);
+        color: var(--warning-contrast-color);
+    }
+
+    &.link {
+        color: var(--link-color);
+        cursor: pointer;
+    }
+
+    //size
+
+    &.small {
+        font-size: 0.85rem;
+    }
+
+    &.x-small {
+        font-size: 0.7rem;
+    }
+
+    &.big {
+        font-size: 1.25rem;
+    }
+
+    &.x-big {
+        font-size: 1.50rem;
+    }
+
+    // styles
+
+    &.rounded {
+        border-radius: 20px;
+    }
+
+    &.disabled {
+        opacity: .4;
+        cursor: not-allowed;
+    }
+
+
 }
