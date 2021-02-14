@@ -1,11 +1,12 @@
+@import "./var.scss";
+
 .row>* {
     box-sizing: border-box;
 }
 
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg : 992px;
-$breakpoint-xl : 1200px;
+.row>[class^="col-"] {
+    box-sizing: border-box;
+}
 
 @mixin viewport-sm {
     @media (min-width: #{$breakpoint-sm}) {

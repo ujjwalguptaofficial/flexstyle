@@ -1,0 +1,9 @@
+@mixin viewport-xxl {
+    @media (min-width: #{$breakpoint-xxl}) {
+        @content;
+    }
+}
+
+@include viewport-xxl {
+    @include viewport-breakup(xxl);
+}
