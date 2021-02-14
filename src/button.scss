@@ -5,6 +5,10 @@
     border-radius: 2px;
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
     &:not(.link) {
         background-color: #efefef;
@@ -59,7 +63,6 @@
 
     &.link {
         color: var(--link-color);
-        cursor: pointer;
     }
 
     //size
@@ -90,6 +93,26 @@
         opacity: .4;
         cursor: not-allowed;
     }
+}
 
+// group button
+.btns {
+    letter-spacing: -.31em;
 
+    .btn {
+        margin: 0;
+        border-radius: 0;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        letter-spacing: normal;
+    }
+
+    :first-child {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    :last-child {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
 }

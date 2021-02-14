@@ -136,7 +136,8 @@ table {
   --success-contrast-color: #fff;
   --error-contrast-color: #fff;
   --warning-contrast-color: #fff;
-  --link-color: #1867c0; }
+  --link-color: #1867c0;
+  --input-border-color: #dddfe2; }
 
 .center {
   margin-left: auto;
@@ -147,6 +148,9 @@ table {
 
 .block {
   display: block; }
+
+.width-full {
+  width: 100%; }
 
 .row {
   display: flex; }
@@ -172,7 +176,11 @@ table {
   text-align: center;
   border-radius: 2px;
   font-size: 1rem;
-  font-weight: 500; }
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
   .btn:not(.link) {
     background-color: #efefef;
     border: 1px solid;
@@ -207,8 +215,7 @@ table {
     border-color: var(--warnings-color);
     color: var(--warning-contrast-color); }
   .btn.link {
-    color: var(--link-color);
-    cursor: pointer; }
+    color: var(--link-color); }
   .btn.small {
     font-size: 0.85rem; }
   .btn.x-small {
@@ -222,6 +229,20 @@ table {
   .btn.disabled {
     opacity: .4;
     cursor: not-allowed; }
+
+.btns {
+  letter-spacing: -.31em; }
+  .btns .btn {
+    margin: 0;
+    border-radius: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    letter-spacing: normal; }
+  .btns :first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px; }
+  .btns :last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; }
 
 h1 {
   font-size: 2rem; }
@@ -240,3 +261,50 @@ h5 {
 
 h6 {
   font-size: 1rem; }
+
+input {
+  font-size: 1rem; }
+
+.textbox {
+  border: 1px solid;
+  padding: 5px 5px;
+  border-radius: 2px;
+  border: 1px solid var(--input-border-color);
+  display: flex;
+  padding: 0;
+  width: 300px;
+  height: 30px;
+  align-items: center; }
+  .textbox input {
+    border: 0;
+    padding: 0 0 0 7px;
+    height: 100%; }
+    .textbox input:focus {
+      outline: none; }
+  .textbox:focus-within {
+    box-shadow: 0 0 0 2px #e7f3ff;
+    border: 2px solid var(--primary-color); }
+  .textbox.error {
+    border-color: var(--error-color); }
+    .textbox.error:focus-within {
+      border-color: var(--error-color); }
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--input-border-color);
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--input-border-color); }
+  .checkbox.primary {
+    border-color: var(--primary-color); }
+  .checkbox[checked]::after {
+    content: "\2713"; }
+  .checkbox[checked].primary {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast-color); }
+  .checkbox[checked].secondary {
+    background-color: var(--secondary-color);
+    color: var(--secondary-contrast-color); }

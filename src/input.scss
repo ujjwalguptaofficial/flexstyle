@@ -1,0 +1,79 @@
+ $border-color: var(--input-border-color);
+
+ input {
+     font-size: 1rem;
+ }
+
+ .textbox {
+     border: 1px solid;
+     padding: 5px 5px;
+     border-radius: 2px;
+     border: 1px solid $border-color;
+     display: flex;
+     padding: 0;
+     width: 300px;
+     height: 30px;
+     align-items: center;
+
+     input {
+         border: 0;
+         padding: 0 0 0 7px;
+         height: 100%;
+
+         &:focus {
+             outline: none;
+         }
+     }
+
+     &:focus-within {
+         box-shadow: 0 0 0 2px #e7f3ff;
+         border: 2px solid var(--primary-color);
+     }
+
+     &.error {
+         border-color: var(--error-color);
+
+         &:focus-within {
+             border-color: var(--error-color);
+         }
+     }
+
+
+ }
+
+ .checkbox {
+     width: 20px;
+     height: 20px;
+     border: 2px solid $border-color;
+     margin: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid $border-color;
+
+     &.primary {
+         border-color: var(--primary-color);
+     }
+
+     &.secondary {
+         border-color: var(--secondary-color);
+     }
+
+
+     &[checked] {
+
+         &::after {
+             content: "\2714";
+         }
+
+         &.primary {
+             background-color: var(--primary-color);
+             color: var(--primary-contrast-color);
+         }
+
+         &.secondary {
+             background-color: var(--secondary-color);
+             color: var(--secondary-contrast-color);
+         }
+     }
+ }
