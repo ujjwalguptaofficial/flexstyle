@@ -1,0 +1,95 @@
+@mixin viewport-sm {
+    @media (min-width: #{$breakpoint-sm}) {
+        @content;
+    }
+}
+
+@mixin viewport-md {
+    @media (min-width: #{$breakpoint-md}) {
+        @content;
+    }
+}
+
+@mixin viewport-lg {
+    @media (min-width: #{$breakpoint-lg}) {
+        @content;
+    }
+}
+
+@mixin viewport-xl {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}
+
+@mixin viewport-breakup($device) {
+
+    $size-of-one-column: 100/12;
+    $unit: '%';
+
+    @for $i from 1 through 12 {
+        @if $device==xs {
+            .col-#{$i} {
+                // width: #{$size-of-one-column*$i}#{$unit};
+                // flex: 0 0 auto;
+                flex-basis: #{$size-of-one-column*$i}#{$unit};
+            }
+        }
+
+        @else {
+            .col-#{$device}-#{$i} {
+                // width: #{$size-of-one-column*$i}#{$unit};
+                // flex: 0 0 auto;
+                flex-basis: #{$size-of-one-column*$i}#{$unit};
+            }
+        }
+    }
+}
+
+@mixin margin-top($value) {
+    .margin-top-#{$value} {
+        margin-top: $value;
+    }
+}
+
+@mixin margin-bottom($value) {
+    .margin-bottom-#{$value} {
+        margin-bottom: $value;
+    }
+}
+
+@mixin margin-left($value) {
+    .margin-left-#{$value} {
+        margin-top: $value;
+    }
+}
+
+@mixin margin-right($value) {
+    .margin-right-#{$value} {
+        margin-right: $value;
+    }
+}
+
+@mixin padding-top($value) {
+    .padding-top-#{$value} {
+        margin-top: $value;
+    }
+}
+
+@mixin padding-bottom($value) {
+    .padding-bottom-#{$value} {
+        padding-bottom: $value;
+    }
+}
+
+@mixin padding-left($value) {
+    .padding-left-#{$value} {
+        padding-left: $value;
+    }
+}
+
+@mixin padding-right($value) {
+    .padding-right-#{$value} {
+        padding-right: $value;
+    }
+}

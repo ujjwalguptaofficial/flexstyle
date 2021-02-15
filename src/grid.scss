@@ -1,4 +1,5 @@
 @import "./var.scss";
+@import "./mixin.scss";
 
 .row>* {
     box-sizing: border-box;
@@ -8,53 +9,7 @@
     box-sizing: border-box;
 }
 
-@mixin viewport-sm {
-    @media (min-width: #{$breakpoint-sm}) {
-        @content;
-    }
-}
 
-@mixin viewport-md {
-    @media (min-width: #{$breakpoint-md}) {
-        @content;
-    }
-}
-
-@mixin viewport-lg {
-    @media (min-width: #{$breakpoint-lg}) {
-        @content;
-    }
-}
-
-@mixin viewport-xl {
-    @media (min-width: #{$breakpoint-xl}) {
-        @content;
-    }
-}
-
-@mixin viewport-breakup($device) {
-
-    $size-of-one-column: 100/12;
-    $unit: '%';
-
-    @for $i from 1 through 12 {
-        @if $device==xs {
-            .col-#{$i} {
-                // width: #{$size-of-one-column*$i}#{$unit};
-                // flex: 0 0 auto;
-                flex-basis: #{$size-of-one-column*$i}#{$unit};
-            }
-        }
-
-        @else {
-            .col-#{$device}-#{$i} {
-                // width: #{$size-of-one-column*$i}#{$unit};
-                // flex: 0 0 auto;
-                flex-basis: #{$size-of-one-column*$i}#{$unit};
-            }
-        }
-    }
-}
 
 //default xs
 
