@@ -11,8 +11,7 @@
     -ms-user-select: none;
 
     &:not(.link) {
-        background-color: #efefef;
-        border: 1px solid;
+        background-color: #e7e7e7;
         padding: .5em 1em;
     }
 
@@ -27,42 +26,71 @@
 
     &.primary {
         background-color: var(--primary-color);
-        border-color: var(--primary-color);
         color: var(--primary-contrast-color);
     }
 
     &.secondary {
         background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
         color: var(--secondary-contrast-color);
     }
 
     &.info {
         background-color: var(--info-color);
-        border-color: var(--info-color);
         color: var(--info-contrast-color);
     }
 
     &.success {
         background-color: var(--success-color);
-        border-color: var(--success-color);
-        color: var(--sucess-contrast-color);
+        color: var(--success-contrast-color);
     }
 
     &.error {
         background-color: var(--error-color);
-        border-color: var(--error-color);
         color: var(--error-contrast-color);
     }
 
     &.warning {
         background-color: var(--warning-color);
-        border-color: var(--warnings-color);
         color: var(--warning-contrast-color);
     }
 
     &.link {
         color: var(--link-color);
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid;
+
+        &.primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        &.secondary {
+            color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        &.info {
+            color: var(--info-color);
+            border-color: var(--info-color);
+        }
+
+        &.success {
+            color: var(--sucess-color);
+            border-color: var(--sucess-color);
+        }
+
+        &.error {
+            color: var(--error-color);
+            border-color: var(--error-color);
+        }
+
+        &.warning {
+            color: var(--warning-color);
+            border-color: var(--warning-color);
+        }
     }
 
     //size
