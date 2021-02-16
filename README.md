@@ -24,24 +24,24 @@ import "flexboot";
 Import scss
 
 ```
-import "flexi/src/index.scss";
+import "flexboot/src/index.scss";
 
 ```
 
 ## Import what you need
 
 ```
-import "flexi/src/basic.scss";
-import "flexi/src/flex.scss";
-import "flexi/src/button.scss";
-import "flexi/src/grid.scss";
-import "flexi/src/grid-xxl.scss";
-import "flexi/src/effect.scss";
-import "flexi/src/margin.scss";
-import "flexi/src/padding.scss";
-import "flexi/src/list.scss";
-import "flexi/src/border.scss";
-import "flexi/src/header.scss";
+import "flexboot/src/basic.scss";
+import "flexboot/src/flex.scss";
+import "flexboot/src/button.scss";
+import "flexboot/src/grid.scss";
+import "flexboot/src/grid-xxl.scss";
+import "flexboot/src/effect.scss";
+import "flexboot/src/margin.scss";
+import "flexboot/src/padding.scss";
+import "flexboot/src/list.scss";
+import "flexboot/src/border.scss";
+import "flexboot/src/header.scss";
 
 
 ```
