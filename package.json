@@ -2,17 +2,17 @@
   "name": "flexi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"node-sass src/index.scss dist/lib.css"
+    "build": "node-sass src/index.scss dist/lib.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ujjwalguptaofficial/flexi.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ujjwal Gupta",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ujjwalguptaofficial/flexi/issues"
   },

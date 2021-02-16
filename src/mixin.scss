@@ -72,7 +72,7 @@
 
 @mixin padding-top($value) {
     .padding-top-#{$value} {
-        margin-top: $value;
+        padding-top: $value;
     }
 }
 
