@@ -17,7 +17,7 @@ npm i flexboot
 # How to use
 
 ```
-import flexboot from "flexboot";
+import "flexboot";
 
 ```
 

@@ -1,3 +1,3 @@
-import Flexi from "flexi";
+import "flexboot";
 
 
