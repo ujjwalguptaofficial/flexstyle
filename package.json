@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass src/index.scss dist/lib.css"
+    "build": "node-sass src/index.scss dist/lib.css",
+    "deploy": "npm run build && cleancss -o dist/lib.min.css dist/lib.css",
+    "pack": "npm run deploy && npm pack"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/ujjwalguptaofficial/flexi#readme",
   "devDependencies": {
+    "clean-css-cli": "^5.1.0",
     "node-sass": "^5.0.0"
   }
 }

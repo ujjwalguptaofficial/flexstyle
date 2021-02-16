@@ -1,1 +1,1 @@
-import "./lib.css";
+import "./lib.min.css";
