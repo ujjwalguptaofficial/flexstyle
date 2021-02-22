@@ -1,1 +1,1 @@
-import "./lib.min.css";
+module.exports = require("./lib.min.css");

@@ -236,7 +236,7 @@ table {
     padding: .5em 1em; }
   .btn:before {
     content: "";
-    display: inherit;
+    display: inline-block;
     vertical-align: middle;
     height: 100%; }
   .btn.primary {
