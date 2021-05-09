@@ -47,49 +47,49 @@
 }
 
 @mixin margin-top($value) {
-    .margin-top-#{$value} {
+    .mt-#{$value} {
         margin-top: $value;
     }
 }
 
 @mixin margin-bottom($value) {
-    .margin-bottom-#{$value} {
+    .mb-#{$value} {
         margin-bottom: $value;
     }
 }
 
 @mixin margin-left($value) {
-    .margin-left-#{$value} {
+    .ml-#{$value} {
         margin-top: $value;
     }
 }
 
 @mixin margin-right($value) {
-    .margin-right-#{$value} {
+    .mr-#{$value} {
         margin-right: $value;
     }
 }
 
 @mixin padding-top($value) {
-    .padding-top-#{$value} {
+    .pt-#{$value} {
         padding-top: $value;
     }
 }
 
 @mixin padding-bottom($value) {
-    .padding-bottom-#{$value} {
+    .pb-#{$value} {
         padding-bottom: $value;
     }
 }
 
 @mixin padding-left($value) {
-    .padding-left-#{$value} {
+    .pl-#{$value} {
         padding-left: $value;
     }
 }
 
 @mixin padding-right($value) {
-    .padding-right-#{$value} {
+    .pr-#{$value} {
         padding-right: $value;
     }
 }

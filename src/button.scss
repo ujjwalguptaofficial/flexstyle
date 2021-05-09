@@ -9,6 +9,8 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    border: 1px solid;
+    text-decoration: none;
 
     &:not(.link) {
         background-color: #e7e7e7;
@@ -60,7 +62,6 @@
 
     &.outlined {
         background-color: transparent;
-        border: 1px solid;
 
         &.primary {
             color: var(--primary-color);

@@ -1,12 +1,19 @@
 @import "./mixin.scss";
 
+@include margin-left(5px);
+@include margin-left(10px);
+@include margin-left(15px);
+@include margin-left(20px);
+
+@include margin-right(5px);
+@include margin-right(10px);
+@include margin-right(15px);
+@include margin-right(20px);
+
 @include margin-top(5px);
 @include margin-top(10px);
 @include margin-top(15px);
 @include margin-top(20px);
-
-
-// margin-bottom
 
 @include margin-bottom(5px);
 @include margin-bottom(10px);
