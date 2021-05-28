@@ -1,7 +1,7 @@
 {
-  "name": "flexboot",
+  "name": "flexstyle",
   "version": "1.0.3",
-  "description": "Flexboot is flexbox based css only framework.",
+  "description": "FlexStyle is flexbox based css only framework.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ujjwalguptaofficial/flexi.git"
+    "url": "git+https://github.com/ujjwalguptaofficial/flexcss.git"
   },
   "author": "Ujjwal Gupta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ujjwalguptaofficial/flexi/issues"
+    "url": "https://github.com/ujjwalguptaofficial/flexcss/issues"
   },
-  "homepage": "https://github.com/ujjwalguptaofficial/flexi#readme",
+  "homepage": "https://github.com/ujjwalguptaofficial/flexcss#readme",
   "devDependencies": {
     "clean-css-cli": "^5.1.0",
     "node-sass": "^5.0.0"
