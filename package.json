@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ujjwalguptaofficial/flexcss.git"
+    "url": "git+https://github.com/ujjwalguptaofficial/flexstyle.git"
   },
   "author": "Ujjwal Gupta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ujjwalguptaofficial/flexcss/issues"
+    "url": "https://github.com/ujjwalguptaofficial/flexstyle/issues"
   },
-  "homepage": "https://github.com/ujjwalguptaofficial/flexcss#readme",
+  "homepage": "https://github.com/ujjwalguptaofficial/flexstyle#readme",
   "devDependencies": {
     "clean-css-cli": "^5.1.0",
     "node-sass": "^5.0.0"

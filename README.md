@@ -1,11 +1,11 @@
 # Overview
 
-flexcss is flexbox based css only framework. It helps you to bootstrap your project via easy customization using scss.
+flexstyle is flexbox based css only framework. It helps you to bootstrap your project via easy customization using scss.
 
 # Install
 
 ```
-npm i flexcss
+npm i flexstyle
 ```
 
 # Features
@@ -19,31 +19,31 @@ npm i flexcss
 # How to use
 
 ```
-import "flexcss";
+import "flexstyle";
 
 ```
 
 ## scss import
 
 ```
-import "flexcss/src/index.scss";
+import "flexstyle/src/index.scss";
 
 ```
 
 ### Import what you need
 
 ```
-import "flexcss/src/basic.scss";
-import "flexcss/src/flex.scss";
-import "flexcss/src/button.scss";
-import "flexcss/src/grid.scss";
-import "flexcss/src/grid-xxl.scss";
-import "flexcss/src/effect.scss";
-import "flexcss/src/margin.scss";
-import "flexcss/src/padding.scss";
-import "flexcss/src/list.scss";
-import "flexcss/src/border.scss";
-import "flexcss/src/header.scss";
+import "flexstyle/src/basic.scss";
+import "flexstyle/src/flex.scss";
+import "flexstyle/src/button.scss";
+import "flexstyle/src/grid.scss";
+import "flexstyle/src/grid-xxl.scss";
+import "flexstyle/src/effect.scss";
+import "flexstyle/src/margin.scss";
+import "flexstyle/src/padding.scss";
+import "flexstyle/src/list.scss";
+import "flexstyle/src/border.scss";
+import "flexstyle/src/header.scss";
 
 ```
 
